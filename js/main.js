@@ -13,7 +13,7 @@ if ('serviceWorker' in navigator) {
   }
   
   let posicaoInicial;
-   const capturarlocalizacao = document.getElementById ('localizacao');
+   const capturarlocalizacao = document.getElementById ('localizacaoo');
    const latitude = document.getElementById ('latitude');
    const longitude = document.getElementById ('longitude');
   
