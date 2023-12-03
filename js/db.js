@@ -90,6 +90,14 @@ async function removerLocalizacao() {
     }
 }
 
+function limparCampos() {
+    document.getElementById("titulo").value = '';
+    document.getElementById("pais").value = '';
+    document.getElementById("endereco").value = '';
+    document.getElementById("latitudee").value = '';
+    document.getElementById("longitudee").value = '';
+}
+
 function listagem(text){
     document.getElementById('resultados').innerHTML = text;
 }
