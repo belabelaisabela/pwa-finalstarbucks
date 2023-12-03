@@ -1,0 +1,11 @@
+button{
+    cursor: pointer;
+}
+h1, h4 {
+    text-align: center;
+}
+#entrada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
