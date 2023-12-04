@@ -1,6 +1,11 @@
 button{
     cursor: pointer;
 }
+
+body{
+    background-color: #f2f0eb;
+}
+
 h1, h4 {
     text-align: center;
 }
@@ -8,4 +13,62 @@ h1, h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.rodapee{
+    height: 250px;
+    background-color:#1e3932;
+    text-align: center
+}
+
+.imgrodape{
+    width: 15%;
+}
+
+.cabecalho{
+    height: 100px;
+    background-color:#1e3932;
+    text-align: center
+}
+
+.imgcabecalho{
+    width: 70px;
+    margin-top: 12px;
+}
+
+.center {
+    padding: 50px 60px;
+    background: #d8e9df;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .center .inputbox {
+    position: relative;
+    width: 300px;
+    height: 30px;
+    margin-bottom: 45px;
+  }
+  .center .inputbox input {
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 2px solid #000;
+    outline: none;
+    background: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+  }
+  .center .inputbox:last-child {
+    margin-bottom: 15px;
+  }
+
+.nomess{
+   font-size: 17px;
+}
+
+.h333{
+    color: #1e3932;
 }

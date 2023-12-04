@@ -12,31 +12,44 @@
     <script type="module" src="js/main.js"></script>
     <title>Starbucks</title>
   </head>
-
-
   <body class="fullscreen">
+    <div class="cabecalho">
+      <img src="/image/favicon.png" alt="pwa" class="imgcabecalho">
+    </div>
     <div class="container">
         <h1 class="title">STARBUCKS</h1>
         <h4>Cadastre o Starbucks mais próximo de você!</h4>
         <div id="entrada">
-          <div class="inputs">
-            <label>Título:</label><br/>
-            <input type="text" id="titulo" placeholder="Starbucks coffee"><br/>
-            <label>País:</label><br/>
-            <input type="text" id="pais" placeholder="País"><br/>
-            <label>Endereço:</label><br/>
-            <input type="text" id="endereco" placeholder="Endereco"><br/>
-            <label>Latitude:</label><br/>
-            <input type="text" id="latitudee" placeholder="Latitude"><br/>
-            <label>Longitude:</label><br/>
-            <input type="text" id="longitudee" placeholder="Longitude"><br/>
+          <h3 class="h333"> ━━━━━━━ ⟡ ━━━━━━━ </h3>
+          <div class="center">
+            <div class="inputbox">
+            <label class="nomess">Título</label>
+            <input type="text" id="titulo" placeholder="Starbucks coffee">
           </div>
-
-              <header class="cabecalhoConteudo">
+            <div class="inputbox">
+            <label class="nomess">País</label>
+            <input type="text" id="pais" placeholder="País">
+          </div>
+            <div class="inputbox">
+            <label class="nomess">Endereço</label>
+            <input type="text" id="endereco" placeholder="Endereco">
+          </div>
+            <div class="inputbox">
+            <label class="nomess">Latitude</label>
+            <input type="text" id="latitudee" placeholder="Latitude">
+          </div>
+            <div class="inputbox">
+            <label class="nomess">Longitude</label>
+            <input type="text" id="longitudee" placeholder="Longitude">
+          </div>
+          </div>
+          <div>
+            <h3 class="h333"> ━━━━━━━ ⟡ ━━━━━━━ </h3>
+          </div>
+              <header>
                 <h2>Geolocalização</h2>
               </header>
-      
-              <div class="conteudoLocalizao">
+              <div>
                 <p>
                   Latitude: <span id="latitude">0.0</span>
                 </p>
@@ -58,6 +71,9 @@
          </div>
         </div>
         <div id="resultados"></div>
+    </div>
+    <div class="rodapee">
+      <img src="/image/rodape.png" alt="pwa" class="imgrodape">
     </div>
 </body>
 
