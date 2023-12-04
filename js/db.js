@@ -49,7 +49,7 @@ async function buscarTodasLocalizacoes(){
             <p>${localizacao.longitudee}</p>`
 
             const button = document.createElement('div');
-            button.innerHTML = "Carregar"
+            button.innerHTML = "Ver no mapa"
             button.className = 'botaoooo'
             button.addEventListener('click', () => {
                 verLocalizacao(localizacao.latitudee, localizacao.longitudee)
