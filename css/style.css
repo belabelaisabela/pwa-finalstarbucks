@@ -6,6 +6,8 @@ h1, h4 {
     text-align: center;
     color: #1e3932;
 }
+
+
 #entrada{
     display: flex;
     flex-direction: column;
@@ -26,7 +28,8 @@ h1, h4 {
 .cabecalho{
     height: 100px;
     background-color:#1e3932;
-    text-align: center
+    text-align: center;
+    box-shadow: 0px 0px 20px 0.3px black;
 }
 
 .imgcabecalho{
@@ -35,7 +38,12 @@ h1, h4 {
 }
 
 .center {
-    padding: 50px 60px;
+  border-color: #1e3932;
+  box-shadow: 0px 0px 20px 0.3px #1e3932;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 10px;
+    padding: 40px 80px 50px 80px;
     background: #d8e9df;
     border-radius: 10px;
     text-align: center;
@@ -46,7 +54,7 @@ h1, h4 {
     position: relative;
     width: 300px;
     height: 30px;
-    margin-bottom: 45px;
+    margin-bottom: 60px;
   }
   .center .inputbox input {
     top: 0;
@@ -65,6 +73,7 @@ h1, h4 {
 
 .nomess{
    font-size: 17px;
+   font-family: Inter,sans-serif;
 }
 
 .h333{
@@ -119,3 +128,40 @@ h1, h4 {
     min-width: 170px;
   }
 }
+
+.grupo{
+  padding-top: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.unidade{
+  border-color: #1e3932;
+  border-style: solid;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+  background: #d8e9df;
+  height: auto;
+}
+
+.item {
+  width: 85%;
+  height: 100%;
+  background-color: #FFD5EE;
+  border: 20px solid #D00881;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+}
+
+.mapouter{
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0.3px black;
+}
+
