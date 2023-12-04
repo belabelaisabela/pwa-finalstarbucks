@@ -27,7 +27,9 @@ window.addEventListener('DOMContentLoaded', async event =>{
     document.getElementById('btnCadastro').addEventListener('click', adicionarLocalizacao);
     document.getElementById('btnCarregar').addEventListener('click', buscarTodasLocalizacoes);
     document.getElementById('btnRemover').addEventListener('click', removerLocalizacao);
+    var mapa = document.getElementById('map');
 });
+
 
 async function buscarTodasLocalizacoes(){
     if(db == undefined){
@@ -38,17 +40,63 @@ async function buscarTodasLocalizacoes(){
     const localizacoes = await store.getAll();
     if(localizacoes){
         const divLista = localizacoes.map(localizacao => {
-            return `<div class="item">
-                    <p>STARBUCKS</p>
-                    <p>${localizacao.titulo}</p>
-                    <p>${localizacao.pais}</p>
-                    <p>${localizacao.endereco}</p>
-                    <p>${localizacao.latitudee}</p>
-                    <p>${localizacao.longitudee}</p>
-                   </div>`;
+            const item = document.createElement('div')
+            item.innerHTML = `<p>STARBUCKS</p>
+            <p>${localizacao.titulo}</p>
+            <p>${localizacao.pais}</p>
+            <p>${localizacao.endereco}</p>
+            <p>${localizacao.latitudee}</p>
+            <p>${localizacao.longitudee}</p>`
+
+            const button = document.createElement('div');
+            button.innerHTML = "Carregar"
+            button.className = 'botaoooo'
+            button.addEventListener('click', () => {
+                verLocalizacao(localizacao.latitudee, localizacao.longitudee)
+                //onClick="verLocalizacao(${localizacao.latitudee}, ${localizacao.longitudee})" 
+            })
+            item.appendChild(button);
+            return item
         });
-        listagem(divLista.join(' '));
+        listagem(divLista);
     }
+}
+
+const sucesso =(posicao) => {
+    posicaoInicial =posicao;
+    latitude.innerHTML = posicaoInicial.coords.latitude
+    longitude.innerHTML = posicaoInicial.coords.longitude
+    mapa.src = `https://maps.google.com/maps?q=${localizacao.latitudee},${localizacao.longitudee}&t=&z=13&ie=UTF8&iwloc=&output=embed`
+   };
+  
+   const erro =(error) => {
+    let errorMessage;
+    switch (error.code) {
+        case 0: 
+          errorMessage = "Erro desconhecido"
+        break;
+        case 1: 
+          errorMessage = "Permissão negada!"
+        break;
+        case 2: 
+          errorMessage = "Captura de posição indisponivel!"
+        break;
+        case 3: 
+          errorMessage = "Tempo de solicitação excedido!"
+        break;
+    
+    }
+    console.log('Ocorreu um erro:' + errorMessage);
+   };
+  
+   capturarlocalizacao.addEventListener('click', () => {
+    navigator.geolocation.getCurrentPosition(sucesso, erro);
+   })
+  
+
+function verLocalizacao(latitude, longitude){
+    const mapa = document.getElementById('map')
+    mapa.src = `https://maps.google.com/maps?q=${latitude},${longitude}&t=&z=13&ie=UTF8&iwloc=&output=embed`
 }
 
 async function adicionarLocalizacao() {
@@ -98,6 +146,10 @@ function limparCampos() {
     document.getElementById("longitudee").value = '';
 }
 
-function listagem(text){
-    document.getElementById('resultados').innerHTML = text;
+function listagem(lista){
+
+    document.getElementById('resultados').innerHTML = "";
+    lista.map(item => {
+        document.getElementById('resultados').appendChild(item)       
+    })
 }

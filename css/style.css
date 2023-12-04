@@ -17,7 +17,8 @@ h1, h4 {
 .rodapee{
     height: 200px;
     background-color:#1e3932;
-    text-align: center
+    text-align: center;
+    box-shadow: 0px 0px 20px 0.3px black;
 }
 
 .imgrodape{
@@ -74,6 +75,7 @@ h1, h4 {
 .nomess{
    font-size: 17px;
    font-family: Inter,sans-serif;
+   color: #1e3932;
 }
 
 .h333{
@@ -102,13 +104,6 @@ h1, h4 {
   text-align: center;
   text-decoration: none;
   transition: all .3s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-59:focus {
-  color: #171e29;
 }
 
 .button-59:hover {
@@ -117,15 +112,9 @@ h1, h4 {
   fill: #7aa78d;
 }
 
-.button-59:active {
-  border-color: #7aa78d;
-  color: #7aa78d;
-  fill: #7aa78d;
-}
-
 @media (min-width: 768px) {
   .button-59 {
-    min-width: 170px;
+    min-width: 190px;
   }
 }
 
@@ -140,24 +129,31 @@ h1, h4 {
   border-color: #1e3932;
   border-style: solid;
   border-radius: 10px;
+  border-width: 5px;
   margin-left: auto;
   margin-right: auto;
-  width: 450px;
+  width: 336px;
   background: #d8e9df;
   height: auto;
+  box-shadow: 0px 0px 20px 0.3px #1e3932;
 }
 
 .item {
-  width: 85%;
+  width: 300px;
   height: 100%;
-  background-color: #FFD5EE;
-  border: 20px solid #D00881;
-  margin: 5px;
+  background-color: #90b7a0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
   flex-direction: column;
   align-items: center; 
   justify-content: center; 
   text-align: center; 
+  font-family: Inter,sans-serif;
+   color: #1e3932;
 }
 
 .mapouter{
@@ -165,3 +161,43 @@ h1, h4 {
   box-shadow: 0px 0px 20px 0.3px black;
 }
 
+.botaoo{
+  padding-bottom: 10px;
+  align-items: center;
+  background-color: #f2f0eb;
+  border: 2px solid #1e3932;
+  box-sizing: border-box;
+  color:  #1e3932;
+  cursor: pointer;
+  display: inline-flex;
+  fill:  #1e3932;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.botaoo:hover {
+  border-color: #7aa78d;
+  color: #7aa78d;
+  fill: #7aa78d;
+}
+
+@media (min-width: 768px) {
+  .botaoo {
+    min-width: 150px;
+  }
+}
+
+.botaoooo{
+  padding-bottom: 10px;
+}

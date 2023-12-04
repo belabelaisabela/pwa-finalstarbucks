@@ -32,15 +32,15 @@
           </div>
             <div class="inputbox">
             <label class="nomess">Endereço</label>
-            <input type="text" id="endereco" placeholder="Endereco">
+            <input type="text" id="endereco" placeholder="Endereço">
           </div>
             <div class="inputbox">
             <label class="nomess">Latitude</label>
-            <input type="text" id="latitudee" placeholder="Latitude">
+            <input required type="number" step="any" id="latitudee" placeholder="Latitude">
           </div>
             <div class="inputbox">
             <label class="nomess">Longitude</label>
-            <input type="text" id="longitudee" placeholder="Longitude">
+            <input required type="number" step="any" id="longitudee" placeholder="Longitude">
           </div>
           </div>
           <div>
@@ -56,7 +56,10 @@
                 <p>
                   Longitude: <span id="longitude">0.0</span>
                 </p>
-                <div class="mapouter" id="loc"><div class="gmap_canvas" id="loc"><iframe width="820" height="560" id="gmap_canvas" src="https://maps.google.com/maps?q=636+5th+Ave%2C+New+York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://online-timer.me/"></a><br><a href="https://timenowin.net/"></a><br><style>.mapouter{position: relative;text-align: right;height: 560px;width: 820px;}</style><a href="https://www.embedmaps.co">google satellite maps zoom</a><style>.gmap_canvas{overflow: hidden;background: none !important;height: 560px;width: 820px;}</style></div></div>
+                <div class="mapouter" id="loc"><div class="gmap_canvas" id="loc">
+                  <iframe width="820" height="560" id="map" src="https://maps.google.com/maps?q=636+5th+Ave%2C+New+York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://online-timer.me/"></a><br><a href="https://timenowin.net/"></a><br><style>.mapouter{position: relative;text-align: right;height: 560px;width: 820px;}</style><a href="https://www.embedmaps.co">google satellite maps zoom</a><style>.gmap_canvas{overflow: hidden;background: none !important;height: 560px;width: 820px;}</style>
+                </div></div>
+
               </div><br/>
               <div>
                 <button class="button-59" id="localizacaoo">Capturar Localização</button>
@@ -65,7 +68,7 @@
             </footer> 
             <button class="button-59" id="btnCadastro">Cadastrar</button><br/>
             <button class="button-59" id="btnCarregar">Listar Cadastros</button><br/>
-            <button class="button-59" id="btnRemover">Remover Cadastro</button><br/>
+            <button class="button-59" id="btnRemover">Remover Cadastro</button><br/><br/>
          </div>
         </div>
         <div class="grupo">
