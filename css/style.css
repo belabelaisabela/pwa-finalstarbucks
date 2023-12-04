@@ -1,13 +1,10 @@
-button{
-    cursor: pointer;
-}
-
 body{
     background-color: #f2f0eb;
 }
 
 h1, h4 {
     text-align: center;
+    color: #1e3932;
 }
 #entrada{
     display: flex;
@@ -16,13 +13,14 @@ h1, h4 {
 }
 
 .rodapee{
-    height: 250px;
+    height: 200px;
     background-color:#1e3932;
     text-align: center
 }
 
 .imgrodape{
     width: 15%;
+    padding-top: 10px;
 }
 
 .cabecalho{
@@ -71,4 +69,53 @@ h1, h4 {
 
 .h333{
     color: #1e3932;
+}
+
+.button-59 {
+  align-items: center;
+  background-color: #f2f0eb;
+  border: 2px solid #1e3932;
+  box-sizing: border-box;
+  color:  #1e3932;
+  cursor: pointer;
+  display: inline-flex;
+  fill:  #1e3932;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-59:focus {
+  color: #171e29;
+}
+
+.button-59:hover {
+  border-color: #7aa78d;
+  color: #7aa78d;
+  fill: #7aa78d;
+}
+
+.button-59:active {
+  border-color: #7aa78d;
+  color: #7aa78d;
+  fill: #7aa78d;
+}
+
+@media (min-width: 768px) {
+  .button-59 {
+    min-width: 170px;
+  }
 }
